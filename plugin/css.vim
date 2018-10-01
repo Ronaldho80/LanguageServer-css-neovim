@@ -1,6 +1,5 @@
 try
-    let s:ls = globpath(&rtp, 'node_modules/.bin/css-languageserver', 1)
-    let s:ls = split(s:ls, "\n")[0]
+    let s:ls = 'css-languageserver'
 
     let s:params = { 'css': [s:ls, '--stdio'],
                 \ 'less': [s:ls, '--stdio'],
